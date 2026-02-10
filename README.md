@@ -1,45 +1,60 @@
-# AI-based Chatbot for Hospital Appointment Booking
+# 🏥 Hospital Appointment Chatbot
 
-A full-stack project developed as part of the **AI-Integrated Full-Stack Python Secure Development** course at **Tsofen** (2025).  
-This system replaces traditional hospital call centers with a chatbot that allows users to book appointments through an AI-integrated chat interface.
+An intelligent chatbot system that enables patients to book hospital appointments without human assistance.  
+The system analyzes patient symptoms using AI, routes them to the appropriate medical department, and completes appointment booking automatically.
 
-## 💡 Overview
-The chatbot communicates with the **GBooking API** to allow patients to:
-- Register and log in securely
-- Choose a medical department and specific doctor
-- Book the nearest available appointment or schedule a future visit
+---
 
-## 🛠️ Technologies Used
+## 🚀 Features
+- User registration and login with secure authentication
+- Intelligent symptom analysis using OpenAI
+- Automatic routing to the relevant medical department
+- Real-time retrieval of available appointments
+- Appointment booking via external scheduling API
+- Full end-to-end chatbot experience
+
+---
+
+## 🧠 System Flow
+1. User registers and logs in
+2. User describes symptoms in natural language
+3. Message is sent to OpenAI for analysis
+4. AI determines the relevant medical department
+5. System retrieves available appointments from GBooking
+6. User selects and books an appointment
+
+---
+
+## 🛠️ Tech Stack
+### Backend
+- Python (Flask)
+- MongoDB
+- OpenAI API
+- REST APIs
 
 ### Frontend
-- React.js  
-- HTML, CSS  
-- API integration with backend  
+- React
 
-### Backend
-- Python (Flask)  
-- RESTful APIs  
-- JWT-based authentication  
-- Integration with GBooking API  
+### External Services
+- GBooking API (appointment scheduling)
 
-### Database
-- MongoDB Atlas  
+---
 
-## 🔗 Repositories
+## 👨‍💻 My Role
+- Implemented user registration and authentication logic
+- Managed database interactions with MongoDB
+- Built chatbot conversation flow and backend logic
+- Integrated OpenAI API for symptom analysis
+- Connected scheduling system (GBooking API) to fetch and book appointments
 
-- [Frontend Repository](https://github.com/SaeedYasen/TsofenFrontend)
-- [Backend Repository](https://github.com/SaeedYasen/TsofenBackend)
+---
 
-## 👤 Roles & Contribution
-- Built and managed the backend using Flask  
-- Integrated external hospital booking system (GBooking API)  
-- Developed secure authentication with JWT  
-- Collaborated in a small agile team with weekly sprints
+## 📦 Installation & Setup
+```bash
+# Backend
+pip install -r requirements.txt
+python app.py
 
-## 🎓 Course Information
-**Program**: AI-Integrated Full-Stack Python Secure Development  
-**Institution**: Tsofen  
-**Year**: 2025
-
-## 📜 License
-This project is part of an educational course. Please contact for usage permissions.
+# Frontend
+npm install
+npm start
