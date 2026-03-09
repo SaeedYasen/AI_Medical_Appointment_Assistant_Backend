@@ -39,6 +39,12 @@ The system analyzes patient symptoms using AI, routes them to the appropriate me
 - GBooking API (appointment scheduling)
 
 ---
+## 🔗 Repositories
+
+- [Frontend Repository](https://github.com/SaeedYasen/TsofenFrontend)
+- [Backend Repository](https://github.com/SaeedYasen/TsofenBackend)
+  
+---
 
 ## 👨‍💻 My Role
 - Implemented user registration and authentication logic
