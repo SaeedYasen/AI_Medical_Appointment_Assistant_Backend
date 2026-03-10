@@ -4,14 +4,7 @@ An intelligent chatbot system that enables patients to book hospital appointment
 The system analyzes patient symptoms using AI, routes them to the appropriate medical department, and completes appointment booking automatically.
 
 ---
-SignUpForm
-<img width="275" height="561" alt="Screenshot 2026-03-09 172634" src="https://github.com/user-attachments/assets/15500ba5-3404-4ce5-80b9-cbf4482cb514" />
 
-LoginForm 
-<img width="444" height="388" alt="Screenshot 2026-03-09 172657" src="https://github.com/user-attachments/assets/b76c307c-5612-4e7c-bfe5-9f52db86fd6c" />
-
-Select appointment 
-<img width="1277" height="606" alt="Screenshot 2026-03-09 172751" src="https://github.com/user-attachments/assets/ac137fd9-0ce5-4971-b369-100e72924b8a" />
 
 ## 🚀 Features
 - User registration and login with secure authentication
@@ -63,6 +56,15 @@ Select appointment
 
 ---
 
+## screenshots
+SignUpForm
+<img width="275" height="561" alt="Screenshot 2026-03-09 172634" src="https://github.com/user-attachments/assets/15500ba5-3404-4ce5-80b9-cbf4482cb514" />
+
+LoginForm 
+<img width="444" height="388" alt="Screenshot 2026-03-09 172657" src="https://github.com/user-attachments/assets/b76c307c-5612-4e7c-bfe5-9f52db86fd6c" />
+
+Select appointment 
+<img width="1277" height="606" alt="Screenshot 2026-03-09 172751" src="https://github.com/user-attachments/assets/ac137fd9-0ce5-4971-b369-100e72924b8a" />
 ## 📦 Installation & Setup
 ```bash
 # Backend
