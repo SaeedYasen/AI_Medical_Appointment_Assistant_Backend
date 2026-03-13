@@ -16,6 +16,15 @@ The system analyzes patient symptoms using AI, routes them to the appropriate me
 
 ---
 
+## System Architecture
+React frontend sends requests to a Flask backend API.
+The backend handles authentication, AI processing using OpenAI, and appointment booking through the GBooking external API.
+All user data and sessions are stored in MongoDB.
+User → React Frontend → Flask API → MongoDB
+                     → OpenAI API
+                     → GBooking API
+
+---
 ## 🧠 System Flow
 1. User registers and logs in
 2. User describes symptoms in natural language
