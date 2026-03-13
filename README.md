@@ -1,87 +1,108 @@
 # 🏥 Hospital Appointment Chatbot
 
-An intelligent chatbot system that enables patients to book hospital appointments without human assistance.  
-The system analyzes patient symptoms using AI, routes them to the appropriate medical department, and completes appointment booking automatically.
+An AI-powered chatbot system that allows patients to book hospital appointments automatically without human assistance.
+
+The system analyses patient symptoms using AI, identifies the appropriate medical department, retrieves available appointments from an external scheduling system, and allows the user to book a doctor directly.
 
 ---
 
+# 🚀 Features
 
-## 🚀 Features
-- User registration and login with secure authentication
-- Intelligent symptom analysis using OpenAI
+- Secure user registration and login
+- AI-based symptom analysis using OpenAI
 - Automatic routing to the relevant medical department
-- Real-time retrieval of available appointments
-- Appointment booking via external scheduling API
-- Full end-to-end chatbot experience
+- Retrieval of available appointments from the external system
+- Appointment booking through the scheduling API
+- End-to-end chatbot booking experience
 
 ---
 
-## System Architecture
-React frontend sends requests to a Flask backend API.
-The backend handles authentication, AI processing using OpenAI, and appointment booking through the GBooking external API.
-All user data and sessions are stored in MongoDB.
+# 🧠 System Architecture
 
-# 
-User → React Frontend → Flask API → MongoDB
-                     → OpenAI API
-                     → GBooking API
+The system follows a typical **Frontend → Backend → External Services** architecture.
+
+The React frontend sends requests to a Flask backend API.  
+The backend handles authentication, AI processing using OpenAI, and appointment booking through the GBooking external API.  
+User data and sessions are stored in MongoDB.
+
+
+User → React Frontend → Flask Backend API → MongoDB
+→ OpenAI API
+→ GBooking API
+
 
 ---
-## 🧠 System Flow
+
+# 🔄 System Flow
+
 1. User registers and logs in
 2. User describes symptoms in natural language
 3. Message is sent to OpenAI for analysis
-4. AI determines the relevant medical department
-5. System retrieves available appointments from GBooking
-6. User selects and books an appointment
+4. AI determines the appropriate medical department
+5. Backend retrieves available appointments from the GBooking API
+6. User selects a doctor and appointment slot
+7. Appointment is booked and stored in the database
 
 ---
 
-## 🛠️ Tech Stack
-### Backend
-- Python (Flask)
-- MongoDB
-- OpenAI API
-- REST APIs
+# 🛠️ Tech Stack
 
-### Frontend
+## Backend
+- Python
+- Flask
+- MongoDB
+- REST APIs
+- OpenAI API
+
+## Frontend
 - React
 
-### External Services
+## External Services
 - GBooking API (appointment scheduling)
 
 ---
-## 🔗 Repositories
 
-- [Frontend Repository](https://github.com/SaeedYasen/TsofenFrontend)
-- [Backend Repository](https://github.com/SaeedYasen/TsofenBackend)
-  
----
+# 👨‍💻 My Role
 
-## 👨‍💻 My Role
-- Implemented user registration and authentication logic
-- Managed database interactions with MongoDB
-- Built chatbot conversation flow and backend logic
+- Implemented secure user authentication
+- Built backend logic for chatbot flow
 - Integrated OpenAI API for symptom analysis
-- Connected scheduling system (GBooking API) to fetch and book appointments
+- Connected external booking system (GBooking API)
+- Managed database operations using MongoDB
+- Implemented API endpoints for appointment retrieval and booking
 
 ---
 
-## screenshots
-SignUpForm
-<img width="275" height="561" alt="Screenshot 2026-03-09 172634" src="https://github.com/user-attachments/assets/15500ba5-3404-4ce5-80b9-cbf4482cb514" />
+# 📸 Screenshots
 
-LoginForm 
-<img width="444" height="388" alt="Screenshot 2026-03-09 172657" src="https://github.com/user-attachments/assets/b76c307c-5612-4e7c-bfe5-9f52db86fd6c" />
+### Sign Up
+<img width="275" height="561" src="https://github.com/user-attachments/assets/15500ba5-3404-4ce5-80b9-cbf4482cb514" />
 
-Select appointment 
-<img width="1277" height="606" alt="Screenshot 2026-03-09 172751" src="https://github.com/user-attachments/assets/ac137fd9-0ce5-4971-b369-100e72924b8a" />
-## 📦 Installation & Setup
+### Login
+<img width="444" height="388" src="https://github.com/user-attachments/assets/b76c307c-5612-4e7c-bfe5-9f52db86fd6c" />
+
+### Select Appointment
+<img width="1277" height="606" src="https://github.com/user-attachments/assets/ac137fd9-0ce5-4971-b369-100e72924b8a" />
+
+---
+
+# 🔗 Repositories
+
+Frontend:  
+https://github.com/SaeedYasen/TsofenFrontend
+
+Backend:  
+https://github.com/SaeedYasen/TsofenBackend
+
+---
+
+# ⚙️ Installation
+
+### Backend
+
 ```bash
-# Backend
 pip install -r requirements.txt
 python app.py
-
-# Frontend
+Frontend
 npm install
 npm start
